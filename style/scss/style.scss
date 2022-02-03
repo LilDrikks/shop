@@ -331,13 +331,17 @@ footer{
 @media (max-width: 1225px) {
     .header{
        
-        justify-content: space-around;
+        justify-content: space-between;
         .menu{
             transition: 0.5s;
             display: none;
         }
         .btn-menu{
-          height: 40px;  
+            height: 40px;
+            margin-right: 20px;
+        }
+        .logo{
+            margin-left: 20px; 
         }
         .menu-mobile,
         .menu-mobile::before,
@@ -359,7 +363,7 @@ footer{
         .menu.active {
             transition: 0.5s;
             display: block;
-            width: 30vw;
+            width: 50%;
             background-color: rgb(36, 36, 36);
             z-index: 1;
             margin-top: 300px;
