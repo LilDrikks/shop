@@ -20,7 +20,7 @@ header{
 }
 .header{
     width: 1200px;
-    height: 80px;
+    height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,17 +39,21 @@ header{
             cursor: pointer;
         }
         li:hover{
-            transition: 0.3s;
+            
             color:gray;
+            border-top: 2px solid blue;
+            border-bottom-left-radius:3px;
+            border-bottom-right-radius:3px;
         }
         .minhaConta{
-            background-color: blue;
-            color:white;
+            border-top: 2px solid blue;
+            border-bottom-left-radius:3px;
+            border-bottom-right-radius:3px;
         }
         .minhaConta:hover{
-            transition: 0.8s;
-            color:white;
-            text-decoration: underline;
+            color:blue;
+            border-top: 2px solid white;
+            
         }
     }
 }
@@ -298,6 +302,8 @@ footer{
     }
     li:hover {
         border-bottom: 2px solid blue;
+        border-bottom-left-radius:3px;
+        border-bottom-right-radius:3px;
     }
    
 }
