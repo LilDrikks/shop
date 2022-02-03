@@ -201,32 +201,122 @@ header{
     }
 }
 
+//drop menu dt dd
+.js-accordion {
+    border-radius: 5px;
+    background-color: rgb(36, 36, 36);
+    
+    
+}
+.js-accordion dt {
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin: 20px 20px 20px 20px;
+    text-align: center;
+    font-size: 18px;
+    
+}
+.js-accordion dd {
+    display: none;
+    
+}
+.js-accordion dd.ativo {
+    display: block;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #c4c4c4;
+    
+}
+.js-accordion dd.ativo{
+    animation: slideDown .3s forwards;
+}
+
+.js-accordion dt::after{
+    content: '↴';
+    margin-left: 10px;
+}
+.js-accordion dt.ativo::after{
+    content: '⬏';
+}
+@keyframes slideDown {
+    from{
+        opacity: 0;
+        transform: translateY(-30px);
+        max-height: 0;
+        background-color: blue;
+    }   
+    to{
+        background-color: rgb(36, 36, 36);
+        max-height: 200px;
+        opacity: 1;
+    }
+}
+
 
 //Footer
 footer{
+    margin-top: 50px;
+    margin-bottom: -20px;
     width: 100%;
     display: flex;
     justify-content: center;
     background-color: white;
+    transform: translateY(100);
 }
 .conteudoFooter{
+    margin: 20px 20px 20px 20px;
     width: 1200px;
     height: 180px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 .leftFooter{
+    width: 50%;
+    font-size: 18px;
     background-color: white;
     display: flex;
     gap: 30px;
+    justify-content: center;
+    p{
+        font-size: 50px;
+        margin-right: 40px;
+        color: blue;
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        gap: 80px;
+        align-items: center;
+    }
+    li{
+        padding: 10px;
+        text-align: center;
+        cursor: pointer;
+    }
+    li:hover {
+        border-bottom: 2px solid blue;
+    }
    
 }
 .rightFooter{
+    width: 50%;
     background-color: white;
     display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: rgb(36, 36, 36);
+    border: 1px solid white;
+    color:white;
+    z-index: 1;
 }
 .rightFooter dd{
     margin-left: 20px;
 }
-
+#copy{
+    color: white;
+    text-align: center;
+    margin-bottom: 60px;
+}
