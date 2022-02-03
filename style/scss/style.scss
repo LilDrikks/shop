@@ -326,3 +326,74 @@ footer{
     text-align: center;
     margin-bottom: 60px;
 }
+
+
+@media (max-width: 1225px) {
+    .header{
+       
+        justify-content: space-around;
+        .menu{
+            transition: 0.5s;
+            display: none;
+        }
+        .btn-menu{
+          height: 40px;  
+        }
+        .menu-mobile,
+        .menu-mobile::before,
+        .menu-mobile::after{
+            content: '';
+            display: block;
+            background-color: blue;
+            width: 50px;
+            height: 5px;
+            border: none;
+        }
+        .menu-mobile::before{
+            margin-top: 15px;
+        }
+        .menu-mobile::after{
+            margin-top: 10px;
+        }
+
+        .menu.active {
+            transition: 0.5s;
+            display: block;
+            width: 30vw;
+            background-color: rgb(36, 36, 36);
+            z-index: 1;
+            margin-top: 300px;
+            border-radius: 5px;
+            border: 1px solid white;
+            color:white;
+            li{
+                border-radius: 5px;
+            }
+            .minhaConta{
+                border: 1px solid rgb(36, 36, 36);
+                background-color: blue;
+            }
+            .minhaConta:hover{
+                color: #8d8d8d;
+                border-top: 2px solid #8d8d8d;
+                
+            }
+        }
+        .menu-mobile.active{
+            background-color: transparent;
+            transition: 0.2s;
+        }
+        .menu-mobile.active::before{
+            transition: 0.5s;
+            transform: rotate(45deg);
+            margin-top: 10px;
+        }
+        .menu-mobile.active::after{
+            transition: 0.5s;
+            transform: rotate(-45deg);
+            margin-top: -5px;
+         }
+         transition: 0.8s;
+
+     }
+}

@@ -61,3 +61,17 @@ function initMenuAccordeon() {
     
     }
     initMenuAccordeon()
+
+    const btnMenu = document.querySelector('.btn-menu')
+    const activeMenu = () => {
+        btnMenu.classList.toggle('active')
+        
+        if(btnMenu.className.includes('active')){
+            btnMenu.childNodes[1].classList.add('active')
+            btnMenu.previousElementSibling.classList.add('active')
+        }else{
+            btnMenu.childNodes[1].classList.remove('active')
+            btnMenu.previousElementSibling.classList.remove('active')
+        }
+    }
+    btnMenu.addEventListener('click', activeMenu)
