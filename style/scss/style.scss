@@ -455,7 +455,21 @@ footer{
         width: 80%;
         justify-content: center;
     }
+    .banner{ 
+        .tituloPagina{
+        font-size: 3rem;
+        }
+    }
     .item1{
+        h1{
+            font-size: 1.5rem;
+        }
+        p{
+            font-size: 1.2rem;
+            padding: 15px;
+            width: 120px;
+
+        }
         
         img {
             margin-top: 20px;
@@ -471,6 +485,14 @@ footer{
         }
     }
     .item2{
+        h1{
+            font-size: 1.5rem;
+        }
+        p{
+            font-size: 1.2rem;
+            padding: 15px;
+            width: 120px;
+        }
         img {
             margin-top: 20px;
             width: 400px;
