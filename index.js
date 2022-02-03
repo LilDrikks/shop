@@ -1,5 +1,5 @@
 let sections = document.querySelectorAll(".js-scroll")
-let metadeDaTela = window.innerHeight * 0.7
+let metadeDaTela = window.innerHeight * 0.8
 
 let ativarScroll = () => 
 {
